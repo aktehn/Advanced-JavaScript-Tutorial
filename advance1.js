@@ -107,15 +107,9 @@ const incrementArray = (arr, x) => {
 // *** Example 1 ***
 const dataOne = [15, 20, 5];
 
-const incr = (a, b) => {
-  return a + b;
-};
-const decr = (a, b) => {
-  return a - b;
-};
-const mul = (a, b) => {
-  return a * b;
-};
+const incr = (a, b) => a + b;
+const decr = (a, b) => a - b;
+const mul = (a, b) => a * b;
 
 const smartOperations = (dataOne, op, pad) => {
   const result = [];
@@ -134,17 +128,9 @@ const smartOperations = (dataOne, op, pad) => {
 // *** Example 2 ***
 const newData = [4, 5, 6, 7, 8];
 
-const one = (newData) => {
-  return Math.floor(Math.PI * newData * newData);
-};
-
-const two = (newData) => {
-  return Math.floor(2 * Math.PI * newData);
-};
-
-const three = (newData) => {
-  return 5 * newData;
-};
+const one = (newData) => Math.floor(Math.PI * newData * newData);
+const two = (newData) => Math.floor(2 * Math.PI * newData);
+const three = (newData) => 5 * newData;
 
 const allFunctions = (newData, a) => {
   const result = [];
