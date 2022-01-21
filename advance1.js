@@ -84,3 +84,49 @@ class CategoryTwo extends Header {
 }
 
 //console.log(new CategoryTwo("a", "b", "c", "d", "e", "f", "g", "h", "i")); // CategoryTwo {id: 'a', name: 'b', title: 'c', link: 'd', list: 'e', …}
+
+/*====================________________Practice 6________________==================== */
+
+const data = [15, 20, 5];
+
+const incrementArray = (arr, x) => {
+  let result = [];
+
+  for (let a of arr) {
+    result.push(a + x);
+  }
+
+  return result;
+};
+
+//console.log(incrementArray(data, 5));  // [20, 25, 10]
+
+/*====================________________Practice 7________________==================== */
+
+const dataOne = [15, 20, 5];
+
+const incr = (a, b) => {
+  return a + b;
+};
+const decr = (a, b) => {
+  return a - b;
+};
+const mul = (a, b) => {
+  return a * b;
+};
+
+const smartOperations = (dataOne, op, pad) => {
+  const result = [];
+
+  for (const i of dataOne) {
+    result.push(op(i, pad));
+  }
+
+  return result;
+};
+
+// console.log(smartOperations(dataOne, incr, 5)); // [20, 25, 10]
+// console.log(smartOperations(dataOne, decr, 5)); // [10, 15, 0]
+// console.log(smartOperations(dataOne, mul, 5)); //  [75, 100, 25]
+
+/*====================________________Practice 8________________==================== */
