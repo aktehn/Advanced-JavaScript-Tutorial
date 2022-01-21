@@ -1,4 +1,4 @@
-/*====================________________Practice 1________________==================== */
+/*====================________________Practice one________________==================== */
 
 Category = [
   { name: "aykut", surname: "dag" },
@@ -13,7 +13,7 @@ const list = new Set(Category.map((item) => item.name));
 
 //console.log(list);   // Set(3) {'aykut', 'ali', 'veli'}
 
-/*====================________________Practice 2________________==================== */
+/*====================________________Practice two________________==================== */
 
 const appState = "loading";
 const keyName = "computer";
@@ -25,7 +25,7 @@ app[keyName] = "apple";
 
 //console.log(app);   // {loading: true, computer: 'apple'}
 
-/*====================________________Practice 3________________==================== */
+/*====================________________Practice three________________==================== */
 
 const initialState = {
   loading: false,
@@ -43,7 +43,7 @@ updateInitialState("colors", ["red", "green", "yellow"]);
 
 //console.log(initialState); // {loading: true, name: 'jhon', age: 24, colors: Array(3)}
 
-/*====================________________Practice 4________________==================== */
+/*====================________________Practice four________________==================== */
 
 class Player {
   constructor() {
@@ -61,7 +61,7 @@ class newPlayer extends Player {
 
 //console.log(new newPlayer); // newPlayer {onePlayer: 'alex', twoPlayer: 'june', threePlayer: 'jhon'}
 
-/*====================________________Practice 5________________==================== */
+/*====================________________Practice five________________==================== */
 
 //Header.jsx
 class Header {
@@ -87,7 +87,7 @@ class CategoryTwo extends Header {
 
 //console.log(new CategoryTwo("a", "b", "c", "d", "e", "f", "g", "h", "i")); // CategoryTwo {id: 'a', name: 'b', title: 'c', link: 'd', list: 'e', …}
 
-/*====================________________Practice 6________________==================== */
+/*====================________________Practice six________________==================== */
 
 const data = [15, 20, 5];
 
@@ -103,7 +103,7 @@ const incrementArray = (arr, x) => {
 
 //console.log(incrementArray(data, 5));  // [20, 25, 10]
 
-/*====================________________Practice 7________________==================== */
+/*====================________________Practice seven________________==================== */
 // *** Example 1 ***
 const dataOne = [15, 20, 5];
 
@@ -146,4 +146,31 @@ const allFunctions = (newData, a) => {
 // console.log(allFunctions(newData, two)); // [25, 31, 37, 43, 50]
 // console.log(allFunctions(newData, three)); // [20, 25, 30, 35, 40]
 
-/*====================________________Practice 8________________==================== */
+/*====================________________Practice eight________________==================== */
+
+//ES6 Generators
+
+// *** example one ***
+function* show() {
+  yield 65;
+}
+const gig = show();
+//console.log(gig.next()); // {value: 65, done: false}
+
+// **** Example two ***
+function* myGen() {
+  yield "First yield statement";
+  yield "Second yield statement";
+  return "Return statement";
+  yield "third yield statement";
+  yield "fourth yield statement";
+}
+let genobj = myGen();
+
+// console.log(genobj.next()); // {value: 'First yield statement', done: false}
+// console.log(genobj.next()); // {value: 'Second yield statement', done: false}
+// console.log(genobj.next()); // {value: 'Return statement', done: true}
+// console.log(genobj.next()); // {value: undefined, done: true}
+// console.log(genobj.next()); // {value: undefined, done: true}
+
+/*====================________________Practice nine________________==================== */
