@@ -58,4 +58,29 @@ class newPlayer extends Player {
   }
 }
 
-console.log(new newPlayer); // newPlayer {onePlayer: 'alex', twoPlayer: 'june', threePlayer: 'jhon'}
+//console.log(new newPlayer); // newPlayer {onePlayer: 'alex', twoPlayer: 'june', threePlayer: 'jhon'}
+
+/*====================________________Practice 5________________==================== */
+//Header.jsx
+class Header {
+  constructor(id, name, title) {
+    this.id = id;
+    this.name = name;
+    this.title = title;
+  }
+}
+
+//CategoryTwo.jsx
+class CategoryTwo extends Header {
+  constructor(id, name, title, link, list, headers, request, audio, path) {
+    super(id, name, title);
+    this.link = link;
+    this.list = list;
+    this.headers = headers;
+    this.request = request;
+    this.audio = audio;
+    this.path = path;
+  }
+}
+
+//console.log(new CategoryTwo("a", "b", "c", "d", "e", "f", "g", "h", "i")); // CategoryTwo {id: 'a', name: 'b', title: 'c', link: 'd', list: 'e', …}
