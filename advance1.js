@@ -1,5 +1,5 @@
 /*====================________________Practice 1________________==================== */
-// map fonksiyonunu new Set() içine aldığımızda aynı olan değerleri sadece bir defa yazar...
+
 Category = [
   { name: "aykut", surname: "dag" },
   { name: "aykut", surname: "al" },
@@ -14,6 +14,7 @@ const list = new Set(Category.map((item) => item.name));
 //console.log(list);   // Set(3) {'aykut', 'ali', 'veli'}
 
 /*====================________________Practice 2________________==================== */
+
 const appState = "loading";
 const keyName = "computer";
 const app = {
@@ -61,6 +62,7 @@ class newPlayer extends Player {
 //console.log(new newPlayer); // newPlayer {onePlayer: 'alex', twoPlayer: 'june', threePlayer: 'jhon'}
 
 /*====================________________Practice 5________________==================== */
+
 //Header.jsx
 class Header {
   constructor(id, name, title) {
@@ -102,7 +104,7 @@ const incrementArray = (arr, x) => {
 //console.log(incrementArray(data, 5));  // [20, 25, 10]
 
 /*====================________________Practice 7________________==================== */
-
+// *** Example 1 ***
 const dataOne = [15, 20, 5];
 
 const incr = (a, b) => {
@@ -128,5 +130,34 @@ const smartOperations = (dataOne, op, pad) => {
 // console.log(smartOperations(dataOne, incr, 5)); // [20, 25, 10]
 // console.log(smartOperations(dataOne, decr, 5)); // [10, 15, 0]
 // console.log(smartOperations(dataOne, mul, 5)); //  [75, 100, 25]
+
+// *** Example 2 ***
+const newData = [4, 5, 6, 7, 8];
+
+const one = (newData) => {
+  return Math.floor(Math.PI * newData * newData);
+};
+
+const two = (newData) => {
+  return Math.floor(2 * Math.PI * newData);
+};
+
+const three = (newData) => {
+  return 5 * newData;
+};
+
+const allFunctions = (newData, a) => {
+  const result = [];
+
+  for (let i = 0; i < newData.length; i++) {
+    result.push(a(newData[i]));
+  }
+
+  return result;
+};
+
+// console.log(allFunctions(newData, one)); // [50, 78, 113, 153, 201]
+// console.log(allFunctions(newData, two)); // [25, 31, 37, 43, 50]
+// console.log(allFunctions(newData, three)); // [20, 25, 30, 35, 40]
 
 /*====================________________Practice 8________________==================== */
