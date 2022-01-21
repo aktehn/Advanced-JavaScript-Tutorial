@@ -43,3 +43,19 @@ updateInitialState("colors", ["red", "green", "yellow"]);
 //console.log(initialState); // {loading: true, name: 'jhon', age: 24, colors: Array(3)}
 
 /*====================________________Practice 4________________==================== */
+
+class Player {
+  constructor() {
+    this.onePlayer = "alex";
+    this.twoPlayer = "june";
+  }
+}
+
+class newPlayer extends Player {
+  constructor() {
+    super();
+    this.threePlayer = "jhon";
+  }
+}
+
+console.log(new newPlayer); // newPlayer {onePlayer: 'alex', twoPlayer: 'june', threePlayer: 'jhon'}
