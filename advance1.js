@@ -188,7 +188,6 @@ const user = {
   },
 };
 
-// set fullName is executed with the given value.
 user.fullName = "Jhon ALL";
 
 // console.log(user.name); // Jhon
