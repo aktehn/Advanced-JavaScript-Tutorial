@@ -174,3 +174,24 @@ let genobj = myGen();
 // console.log(genobj.next()); // {value: undefined, done: true}
 
 /*====================________________Practice nine________________==================== */
+
+const user = {
+  name: "Alex",
+  surname: "SMİTH",
+
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  },
+
+  set fullName(value) {
+    [this.name, this.surname] = value.split(" ");
+  },
+};
+
+// set fullName is executed with the given value.
+user.fullName = "Jhon ALL";
+
+// console.log(user.name); // Jhon
+// console.log(user.surname); // Jhon
+
+/*====================________________Practice ten________________==================== */
